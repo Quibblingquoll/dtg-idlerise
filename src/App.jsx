@@ -236,24 +236,41 @@ function detectLevelFromHostname(hostname) {
 
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-// Card component for a link
-function LinkCard({ title, url, desc }) {
+function LinkCard({ title, url, desc, img }) {
+  const fallback = getFavicon(url, 128);
   return (
     <a
       href={url}
-      className="group block rounded-2xl border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 p-4 shadow-sm hover:shadow transition-all bg-white/60 dark:bg-neutral-900/60 backdrop-blur focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
-      target="_blank" rel="noopener noreferrer"
+      className="group block rounded-2xl border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 p-4 shadow-sm hover:shadow-md transition-all bg-white/70 dark:bg-neutral-900/70 backdrop-blur focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      <div className="flex items-start gap-3 mb-2">
-        <div className="p-2 rounded-xl bg-neutral-100 dark:bg-neutral-800">
-          <LinkIcon />
+      <div className="flex items-start gap-4">
+        <div className="shrink-0 w-14 h-14 rounded-xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 ring-1 ring-inset ring-neutral-200/60 dark:ring-neutral-700/60">
+          <img
+            src={img || fallback}
+            alt=""
+            loading="lazy"
+            className="w-full h-full object-cover"
+            onError={(e) => { e.currentTarget.src = fallback; }}
+          />
         </div>
-        <h3 className="text-base font-semibold leading-tight">{title}</h3>
+        <div className="min-w-0">
+          <h3 className="text-base font-semibold leading-snug line-clamp-2 group-hover:underline underline-offset-4">
+            {title}
+          </h3>
+          <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400 leading-snug line-clamp-2">
+            {desc}
+          </p>
+          <div className="mt-2 text-xs text-neutral-500 dark:text-neutral-400">
+            {getHost(url)}
+          </div>
+        </div>
       </div>
-      <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-snug">{desc}</p>
     </a>
   );
 }
+
 
 // Small pill button
 function Pill({ active, children, onClick }) {
