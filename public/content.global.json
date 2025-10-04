@@ -2,28 +2,73 @@
   "k": {
     "label": "Kindergarten",
     "subjects": {
-      "Maths": [],
-      "Science": [],
-      "Geography": [],
-      "History": []
+      "Maths": [
+        { "t": "ABCya!", "u": "https://www.abcya.com/", "d": "Educational games for early numeracy and literacy." },
+        { "t": "PBS Kids", "u": "https://pbskids.org/games/math/", "d": "Fun, animated maths games for kids." },
+        { "t": "CoolMath4Kids", "u": "https://www.coolmath4kids.com/", "d": "Colourful maths games and puzzles for beginners." },
+        { "t": "Numberblocks (BBC)", "u": "https://www.bbc.co.uk/cbeebies/shows/numberblocks", "d": "Learn numbers and counting through fun animations." },
+        { "t": "Toy Theatre", "u": "https://toytheater.com/category/math-games/", "d": "Interactive maths mini-games for primary students." }
+      ],
+      "Science": [
+        { "t": "NASA Space Place", "u": "https://spaceplace.nasa.gov/", "d": "Explore Earth, space, and science with cartoons and games." },
+        { "t": "Switch Zoo", "u": "https://www.switchzoo.com/", "d": "Animal mixing, habitats, and fun biology facts." },
+        { "t": "BBC Bitesize KS1 Science", "u": "https://www.bbc.co.uk/bitesize/subjects/z6svr82", "d": "Simple science videos and quizzes." }
+      ],
+      "Geography": [
+        { "t": "National Geographic Kids", "u": "https://kids.nationalgeographic.com/", "d": "Interactive geography, animals, and maps." },
+        { "t": "Ducksters Geography", "u": "https://www.ducksters.com/geography/", "d": "Maps, flags, and country facts for kids." }
+      ],
+      "History": [
+        { "t": "BBC Bitesize KS1 History", "u": "https://www.bbc.co.uk/bitesize/subjects/zhxhfg8", "d": "Simple, illustrated history lessons for young children." },
+        { "t": "National Geographic Kids History", "u": "https://kids.nationalgeographic.com/history", "d": "Learn about ancient worlds and famous explorers." }
+      ]
     }
   },
   "p": {
     "label": "Primary",
     "subjects": {
-      "Maths": [],
-      "Science": [],
-      "Geography": [],
-      "History": []
+      "Maths": [
+        { "t": "Math Playground", "u": "https://www.mathplayground.com/", "d": "Hundreds of maths puzzles and logic games." },
+        { "t": "SplashLearn", "u": "https://www.splashlearn.com/", "d": "Curriculum-aligned interactive maths lessons." },
+        { "t": "NRICH Primary Maths", "u": "https://nrich.maths.org/primary", "d": "Challenging maths puzzles for upper primary." },
+        { "t": "Prodigy Game", "u": "https://www.prodigygame.com/", "d": "Gamified maths adventure tied to learning standards." }
+      ],
+      "Science": [
+        { "t": "BBC Bitesize KS2 Science", "u": "https://www.bbc.co.uk/bitesize/subjects/z2pfb9q", "d": "Games and videos explaining key science topics." },
+        { "t": "NASA Kids Club", "u": "https://www.nasa.gov/kidsclub/index.html", "d": "Play science games about space and engineering." },
+        { "t": "PhET Simulations (Primary)", "u": "https://phet.colorado.edu/en/simulations/filter?subjects=physics,biology,chemistry,earth-science&type=html,prototype&sort=alpha&locale=en", "d": "Interactive experiments for primary learners." }
+      ],
+      "Geography": [
+        { "t": "Seterra Geography Games", "u": "https://online.seterra.com/en", "d": "Map quiz games for learning countries and capitals." },
+        { "t": "Geoguessr (Free Version)", "u": "https://www.geoguessr.com/free", "d": "Guess locations using Google Street View." }
+      ],
+      "History": [
+        { "t": "BBC Bitesize KS2 History", "u": "https://www.bbc.co.uk/bitesize/subjects/zkqmhyc", "d": "Interactive timelines and videos." },
+        { "t": "Ducksters History", "u": "https://www.ducksters.com/history/", "d": "Kids' history resources covering ancient to modern times." }
+      ]
     }
   },
   "h": {
     "label": "High School",
     "subjects": {
-      "Maths": [],
-      "Science": [],
-      "Geography": [],
-      "History": []
+      "Maths": [
+        { "t": "Desmos", "u": "https://www.desmos.com/", "d": "Online graphing calculator and interactive maths tools." },
+        { "t": "Khan Academy Maths", "u": "https://www.khanacademy.org/math", "d": "Free maths lessons and practice problems." },
+        { "t": "NRICH Secondary Maths", "u": "https://nrich.maths.org/secondary", "d": "Rich problem-solving tasks for secondary students." }
+      ],
+      "Science": [
+        { "t": "PhET Simulations", "u": "https://phet.colorado.edu/", "d": "Interactive physics, chemistry, and biology simulations." },
+        { "t": "Gizmos ExploreLearning", "u": "https://www.explorelearning.com/", "d": "Hands-on virtual science experiments." },
+        { "t": "BBC Bitesize GCSE Science", "u": "https://www.bbc.co.uk/bitesize/subjects/zrkw2hv", "d": "Videos and quizzes for secondary science." }
+      ],
+      "Geography": [
+        { "t": "BBC Bitesize GCSE Geography", "u": "https://www.bbc.co.uk/bitesize/subjects/zrw76sg", "d": "Case studies, maps, and quizzes." },
+        { "t": "Seterra Geography", "u": "https://online.seterra.com/en", "d": "Geography quizzes and world map practice." }
+      ],
+      "History": [
+        { "t": "BBC Bitesize GCSE History", "u": "https://www.bbc.co.uk/bitesize/subjects/zj26n39", "d": "Historical events, timelines, and revision materials." },
+        { "t": "Khan Academy World History", "u": "https://www.khanacademy.org/humanities/world-history", "d": "Video lessons on world history topics." }
+      ]
     }
   }
 }
