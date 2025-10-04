@@ -8,8 +8,11 @@
     <title>Downtime Games – IdleRise • DTG</title>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: relative path (./), not /src/... -->
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+  <div id="root"></div>
+  <!-- Inline module import avoids any path resolution issues -->
+  <script type="module">
+    import './src/main.jsx'
+  </script>
+</body>
 </html>
+
