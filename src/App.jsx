@@ -83,6 +83,18 @@ const SearchIcon = () => (
   </svg>
 );
 
+// --- Thumbnails ---
+// If a link object has `img`, we show it. Otherwise we fall back to favicon.
+const getHost = (url) => {
+  try { return new URL(url).hostname; } catch { return ""; }
+};
+const getFavicon = (url, size = 64) => {
+  const host = getHost(url);
+  // Google favicon service (fast, reliable, HTTPS)
+  return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=${size}`;
+};
+
+
 // --- Content Config (JSON‑driven) ---
 // App loads /content.global.json and optional /content.{region}.json to override.
 // DEFAULT_CONTENT is a safe fallback.
