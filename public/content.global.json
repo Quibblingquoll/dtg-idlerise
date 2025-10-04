@@ -1,0 +1,29 @@
+{
+  "k": {
+    "label": "Kindergarten",
+    "subjects": {
+      "Maths": [],
+      "Science": [],
+      "Geography": [],
+      "History": []
+    }
+  },
+  "p": {
+    "label": "Primary",
+    "subjects": {
+      "Maths": [],
+      "Science": [],
+      "Geography": [],
+      "History": []
+    }
+  },
+  "h": {
+    "label": "High School",
+    "subjects": {
+      "Maths": [],
+      "Science": [],
+      "Geography": [],
+      "History": []
+    }
+  }
+}
