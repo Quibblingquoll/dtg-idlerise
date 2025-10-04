@@ -501,12 +501,21 @@ export default function App() {
       </div>
 
       {/* Content grid */}
-      <main className="max-w-6xl mx-auto px-4 py-6 motion-reduce:transition-none">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredLinks.map((link) => (
-            <LinkCard key={slug(link.u)} title={link.t} url={link.u} desc={link.d} />
-          ))}
-        </div>
+{/* Section heading */}
+<h2 className="sr-only">Links</h2>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-2">
+  {filteredLinks.map((link) => (
+    <LinkCard
+      key={slug(link.u)}
+      title={link.t}
+      url={link.u}
+      desc={link.d}
+      img={link.img}
+    />
+  ))}
+</div>
+
 
         {/* Placeholder Ad area (hidden if adFree) */}
         {!adFree && (
